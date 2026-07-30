@@ -53,6 +53,24 @@ nav {
   display: flex;
   gap: 0.9rem;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.lang-switch {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin-left: 0.4rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.lang-switch a[aria-current="true"] {
+  color: var(--fg);
+  font-weight: 600;
+  text-decoration: none;
+  pointer-events: none;
 }
 
 a { color: var(--accent); text-decoration: none; }
