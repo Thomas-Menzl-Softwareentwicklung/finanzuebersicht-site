@@ -1,13 +1,14 @@
 # finanzuebersicht-site
 
 Öffentliche Legal-/Support-Seiten für **Finanzübersicht** (App Store Connect) —
-analog zu [simpletd-site](https://github.com/Thomas-Menzl-Softwareentwicklung/simpletd-site).
+analog zu [simpletd-site](https://github.com/Thomas-Menzl-Softwareentwicklung/simpletd-site)
+bzw. [simpletd.thomasmenzl.de](https://simpletd.thomasmenzl.de) (DE/EN-Umschaltung, Umsatzsteuerhinweis).
 
-| Seite | URL | ASC-Feld |
-|-------|-----|----------|
-| Support | `https://finanzuebersicht.thomasmenzl.de/` | Support URL |
-| Privacy | `https://finanzuebersicht.thomasmenzl.de/privacy.html` | Privacy Policy URL |
-| Impressum | `https://finanzuebersicht.thomasmenzl.de/impressum.html` | DE-Pflicht |
+| Seite | URL (DE) | URL (EN) | ASC-Feld |
+|-------|----------|----------|----------|
+| Support | `https://finanzuebersicht.thomasmenzl.de/` | `…/en/` | Support URL |
+| Privacy | `https://finanzuebersicht.thomasmenzl.de/privacy.html` | `…/en/privacy.html` | Privacy Policy URL |
+| Impressum | `https://finanzuebersicht.thomasmenzl.de/impressum.html` | `…/en/impressum.html` | DE-Pflicht |
 
 Fallback ohne Custom Domain:
 
@@ -15,8 +16,7 @@ Fallback ohne Custom Domain:
 
 ## Setup
 
-1. USt-Platzhalter ersetzen: `REPLACE_WITH_VAT_OR_EXEMPTION` in `impressum.html` (E-Mail/Adresse sind gesetzt).
-2. GitHub Pages (Repo → Settings → Pages):
+1. GitHub Pages (Repo → Settings → Pages):
    - Source: **Deploy from a branch**
    - Branch: `main`
    - Folder: **`/`** (Repo-Root)
@@ -29,12 +29,12 @@ gh api repos/Thomas-Menzl-Softwareentwicklung/finanzuebersicht-site/pages \
   -f source[path]=/
 ```
 
-3. Custom Domain (wie SimpleTD):
+2. Custom Domain (wie SimpleTD):
    - DNS CNAME: `finanzuebersicht.thomasmenzl.de` → `thomas-menzl-softwareentwicklung.github.io`
    - In Pages Custom Domain eintragen + HTTPS erzwingen
    - `CNAME` im Repo enthält bereits `finanzuebersicht.thomasmenzl.de`
 
-4. Optional als Submodule im App-Repo:
+3. Optional als Submodule im App-Repo:
 
 ```bash
 cd /Users/thomas/dev/finanzuebersicht/finanzuebersicht-1
