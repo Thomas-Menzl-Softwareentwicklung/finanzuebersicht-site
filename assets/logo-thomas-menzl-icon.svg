@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Logo-Icon "TM" fuer Thomas Menzl Softwareentwicklung. viewBox ist eng auf die
+     sichtbare Form zugeschnitten (Original-Zeichenflaeche war 1024x1024 mit viel Leerraum),
+     damit das Icon in <img>/CSS ohne zusaetzliches Padding korrekt skaliert. -->
+<svg
+   viewBox="164 301 695 416"
+   width="695"
+   height="416"
+   version="1.1"
+   id="svg12"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12">
+    <!-- T-Balken: horizontaler Verlauf -->
+    <linearGradient
+       id="gradBar"
+       x1="194"
+       y1="371"
+       x2="610"
+       y2="371"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#0032C3"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#0ACDDE"
+         id="stop2" />
+    </linearGradient>
+    <!-- T-Stamm: vertikaler Verlauf -->
+    <linearGradient
+       id="gradStem"
+       x1="350"
+       y1="412"
+       x2="350"
+       y2="687"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#0026AA"
+         id="stop3" />
+      <stop
+         offset="1"
+         stop-color="#019FDE"
+         id="stop4" />
+    </linearGradient>
+    <!-- M "\" : diagonal oben-links nach unten-rechts -->
+    <linearGradient
+       id="gradBack"
+       x1="455"
+       y1="445"
+       x2="610"
+       y2="568"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#0074CD"
+         id="stop5" />
+      <stop
+         offset="1"
+         stop-color="#09CCE7"
+         id="stop6" />
+    </linearGradient>
+    <!-- M "/" : von dunkler Spitze nach Tuerkis oben -->
+    <linearGradient
+       id="gradSlash"
+       x1="632"
+       y1="580"
+       x2="790"
+       y2="348"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#0A0A73"
+         id="stop7" />
+      <stop
+         offset="0.2"
+         stop-color="#0046B7"
+         id="stop8" />
+      <stop
+         offset="0.55"
+         stop-color="#0097D4"
+         id="stop9" />
+      <stop
+         offset="1"
+         stop-color="#0DD8E6"
+         id="stop10" />
+    </linearGradient>
+    <!-- M rechter Stamm: vertikaler Verlauf -->
+    <linearGradient
+       id="gradRight"
+       x1="907.52576"
+       y1="392.79773"
+       x2="642.47424"
+       y2="615.20233"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#gradSlash"
+       spreadMethod="reflect">
+      <stop
+         offset="0"
+         stop-color="#0CD1E4"
+         id="stop11" />
+      <stop
+         offset="1"
+         stop-color="#0037C7"
+         id="stop12" />
+    </linearGradient>
+  </defs>
+  <!-- 1: T-Stamm -->
+  <path
+     id="t-stamm"
+     d="M300,412 L399,412 L399,620 L396,624 L304,686 L300,687 Z"
+     fill="url(#gradStem)" />
+  <!-- 2: T-Balken -->
+  <path
+     id="t-balken"
+     d="M194,331 L610,331 L605,340 L555,402 L547,410 L543,412 L194,412 Z"
+     fill="url(#gradBar)" />
+  <!-- 3: M "\" -->
+  <path
+     id="m-back"
+     d="m 431,433 62,-1 5,2 134,146 -122,1 -5,-2 -11,-11 -61,-69 -2,-4 z"
+     fill="url(#gradBack)"
+     style="display:inline" />
+  <!-- 4: M "/" -->
+  <path
+     id="m-slash"
+     d="M 711,331 H 828 L 722.4,465.6 632,580 562.1,503.9 705,334 Z"
+     fill="url(#gradSlash)"
+     style="display:inline" />
+  <!-- 5: M rechter Stamm -->
+  <path
+     id="m-right"
+     d="m 723,677 101,-96 5,-7 -1,-243 -105.6,134.6 z"
+     fill="url(#gradRight)"
+     style="display:inline" />
+</svg>
