@@ -5,30 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Finanzübersicht — Privacy Policy</title>
   <meta name="description" content="Privacy policy for the Finanzübersicht app." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="../assets/logo-thomas-menzl-icon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="../assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="../styles.css" />
   <link rel="alternate" hreflang="de" href="../privacy.html" />
   <link rel="alternate" hreflang="en" href="privacy.html" />
 </head>
 <body>
-  <header>
-    <p class="brand">Finanzübersicht</p>
-    <nav>
-      <a href="index.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="impressum.html">Legal Notice</a>
-      <span class="lang-switch" aria-label="Language">
-        <a href="../privacy.html" lang="de" hreflang="de">DE</a>
-        <span aria-hidden="true">·</span>
-        <a href="privacy.html" aria-current="true" lang="en">EN</a>
-      </span>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="product-brand" href="index.html">
+        <img class="app-mark" src="../assets/app-icon.png" alt="" width="40" height="40" />
+        <span class="product-name">Finanzübersicht</span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="impressum.html">Legal Notice</a>
+        <span class="lang-switch" aria-label="Language">
+          <a href="../privacy.html" lang="de" hreflang="de">DE</a>
+          <span aria-hidden="true">·</span>
+          <a href="privacy.html" aria-current="true" lang="en">EN</a>
+        </span>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main" class="page">
     <h1>Privacy Policy</h1>
     <p class="muted">Last updated: September 2026 · Controller: Thomas Menzl Softwareentwicklung</p>
 
-    <section>
+    <section class="content-card">
       <h2>1. Overview</h2>
       <p>
         Finanzübersicht is a personal finance app for iPhone, iPad, and Mac.
@@ -36,7 +49,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>2. On-device data</h2>
       <p>All finance and settings data are stored locally on your device, including:</p>
       <ul>
@@ -52,7 +65,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>3. Optional iCloud Sync</h2>
       <p>
         You can optionally enable <strong>iCloud Sync</strong> (yearly subscription, independent of Pro).
@@ -67,7 +80,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>4. In-app purchases</h2>
       <p>
         Purchases (Pro as a one-time purchase, optional Sync as a yearly subscription) are processed
@@ -76,12 +89,12 @@
       </p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>5. No sharing</h2>
       <p>We do not sell or share personal usage data with advertising networks or data brokers.</p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>6. App Store / platform</h2>
       <p>
         If you get the app via the Apple App Store, Apple may process purchase, download, and
@@ -89,7 +102,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>7. Contact</h2>
       <p>
         Privacy questions:
@@ -102,8 +115,22 @@
     </section>
   </main>
 
-  <footer>
-    <p>© Thomas Menzl Softwareentwicklung · <a href="impressum.html">Legal Notice</a> · <a href="index.html">Support</a></p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand" href="https://thomasmenzl.de/" aria-label="Thomas Menzl Softwareentwicklung">
+        <img class="brand-mark" src="../assets/logo-thomas-menzl-icon.svg" alt="" width="50" height="30" />
+        <span class="brand-text">
+          <span class="brand-name">Thomas Menzl</span>
+          <span class="brand-sub">Softwareentwicklung</span>
+        </span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="impressum.html">Legal Notice</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://thomasmenzl.de/finanzuebersicht/en/">Product page</a>
+      </nav>
+      <p class="footer-copy">© Thomas Menzl Softwareentwicklung</p>
+    </div>
   </footer>
 </body>
 </html>

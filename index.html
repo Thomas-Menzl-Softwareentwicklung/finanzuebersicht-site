@@ -5,32 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Finanzübersicht — Support</title>
   <meta name="description" content="Support, Hilfe und Kontakt für die App Finanzübersicht." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="assets/logo-thomas-menzl-icon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="alternate" hreflang="de" href="index.html" />
   <link rel="alternate" hreflang="en" href="en/index.html" />
 </head>
 <body>
-  <header>
-    <p class="brand">Finanzübersicht</p>
-    <nav>
-      <a href="index.html">Support</a>
-      <a href="privacy.html">Datenschutz</a>
-      <a href="impressum.html">Impressum</a>
-      <span class="lang-switch" aria-label="Sprache">
-        <a href="index.html" aria-current="true" lang="de">DE</a>
-        <span aria-hidden="true">·</span>
-        <a href="en/index.html" lang="en" hreflang="en">EN</a>
-      </span>
-    </nav>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="product-brand" href="index.html">
+        <img class="app-mark" src="assets/app-icon.png" alt="" width="40" height="40" />
+        <span class="product-name">Finanzübersicht</span>
+      </a>
+      <nav class="primary-nav" aria-label="Hauptnavigation">
+        <a href="index.html" aria-current="page">Support</a>
+        <a href="privacy.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <span class="lang-switch" aria-label="Sprache">
+          <a href="index.html" aria-current="true" lang="de">DE</a>
+          <span aria-hidden="true">·</span>
+          <a href="en/index.html" lang="en" hreflang="en">EN</a>
+        </span>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Support</h1>
-    <p><a href="https://thomasmenzl.de/finanzuebersicht/">Alle Funktionen der App ansehen</a></p>
-    <p><a href="https://apps.apple.com/de/app/meine-finanzübersicht/id6796250291">App im App Store ansehen ↗</a></p>
-    <p>Hilfe, Feedback und Bug-Meldungen für <strong>Finanzübersicht</strong>.</p>
+  <main id="main" class="page">
+    <div class="page-intro">
+      <h1>Support</h1>
+      <p>Hilfe, Feedback und Bug-Meldungen für <strong>Finanzübersicht</strong>.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://thomasmenzl.de/finanzuebersicht/">
+          Alle Funktionen ansehen
+        </a>
+        <a class="btn btn-secondary" href="https://apps.apple.com/de/app/meine-finanzübersicht/id6796250291">
+          Im App Store ansehen <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
 
-    <section>
+    <section class="content-card">
       <h2>Kontakt</h2>
       <p>
         E-Mail:
@@ -43,13 +64,13 @@
       <p class="muted">Bitte App-Version, Gerät (iPhone / iPad / Mac) und eine kurze Beschreibung mitschicken.</p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>Sprachen und Importe</h2>
       <p>Die App ist auf Deutsch und Englisch. Der CSV-Import unterstützt aktuell das DKB-Format.</p>
       <p>Weitere Sprachen und CSV-Formate anderer Banken nehmen wir gerne auf Nachfrage auf. Schreib an <a href="mailto:info@thomasmenzl.de?subject=Finanz%C3%BCbersicht%20Sprache">info@thomasmenzl.de</a> — bei einem neuen Import am besten mit einer anonymisierten Beispieldatei.</p>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>App Store</h2>
       <ul>
         <li>Free-Tier für den Alltag — Daten bleiben lokal auf dem Gerät.</li>
@@ -59,7 +80,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="content-card">
       <h2>Zur App</h2>
       <ul>
         <li>Persönliche Finanzverwaltung für iPhone, iPad und Mac.</li>
@@ -69,8 +90,22 @@
     </section>
   </main>
 
-  <footer>
-    <p>© Thomas Menzl Softwareentwicklung · <a href="impressum.html">Impressum</a> · <a href="privacy.html">Datenschutz</a></p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand" href="https://thomasmenzl.de/" aria-label="Thomas Menzl Softwareentwicklung">
+        <img class="brand-mark" src="assets/logo-thomas-menzl-icon.svg" alt="" width="50" height="30" />
+        <span class="brand-text">
+          <span class="brand-name">Thomas Menzl</span>
+          <span class="brand-sub">Softwareentwicklung</span>
+        </span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer-Navigation">
+        <a href="impressum.html">Impressum</a>
+        <a href="privacy.html">Datenschutz</a>
+        <a href="https://thomasmenzl.de/finanzuebersicht/">Produktseite</a>
+      </nav>
+      <p class="footer-copy">© Thomas Menzl Softwareentwicklung</p>
+    </div>
   </footer>
 </body>
 </html>
